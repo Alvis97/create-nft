@@ -8,12 +8,13 @@ import UploadMetadata from "./components/UploadMetadata";
 import MintNft from "./components/MintNft";
 
 
+
 function page() {
   return (
     <div>
         <UploadImage />
         <UploadMetadata />
-        <MintNft />
+        <MintNft/>
     </div>
   )
 }
