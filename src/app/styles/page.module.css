@@ -1,0 +1,69 @@
+
+.page {
+  padding: 100px 20px;
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.page h1{
+  font-family: "Modak", sans-serif;
+  font-size: 130px;
+  width: 450px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px 0 ;
+}
+
+.page p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: rgba(var(--text-color));
+}
+
+.page button{
+  background: linear-gradient(to bottom, rgba(var(--yellow)), rgba(var(--peach)));
+  border: 0;
+  padding: 15px 40px;
+  font-size: 28px;
+  border-radius: 7px;
+  margin: 0;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 1px 10px 21px -7px rgba(163,163,163,1);
+  transition: 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.page button:hover{
+  background: linear-gradient(to bottom, rgba(var(--yellow)), rgba(var(--peach), 0.8));
+  transform: scale(1.05);
+}
+
+.textShadow{
+  position: relative;
+  color: rgba(var(--purple), 0.5);
+}
+
+
+.text{
+  background-color: transparent;
+  position: absolute;
+  top: 7px;
+  color: rgba(var(--purple));
+}
+
+
+
+
+
+
+
+
+
+

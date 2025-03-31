@@ -2,19 +2,29 @@
 
 import "dotenv/config";
 import fs from "fs";
+import Quest from "./components/Quest";
+import { useRouter } from "next/navigation";
 
-import UploadImage from "./components/UploadImage";
-import UploadMetadata from "./components/UploadMetadata";
-import MintNft from "./components/MintNft";
+//Style
+import PageStyle from "./styles/page.module.css";
+
 
 
 
 function page() {
+   const router = useRouter();
+
+
   return (
-    <div>
-        <UploadImage />
-        <UploadMetadata />
-        <MintNft/>
+    <div className={PageStyle.page}>
+      <div className={PageStyle.textShadow}>
+      <h1>Let’s create an NFT</h1>
+        <div className={PageStyle.text}>
+        <h1>Let’s create an NFT</h1>
+        </div>
+      </div>
+      <p>Fast, Simple, and Devnet-Friendly!</p>
+      <button onClick={() => router.push("./dashboard")}>Start!</button>
     </div>
   )
 }
